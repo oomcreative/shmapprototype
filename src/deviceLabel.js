@@ -19,21 +19,25 @@ function Label({ textForLabel = "something", width = 100 }) {
       style={labelStyle}
     >
       <defs>
-        <filter id="crispify">
-          <feComponentTransfer>
-            <feFuncA type="discrete" tableValues="0 1" />
-          </feComponentTransfer>
+        <filter id="shadow">
+          <feDropShadow
+            dx="0.2"
+            dy="0.4"
+            stdDeviation="0.2"
+            flood-color="blue"
+          />
         </filter>
       </defs>
 
-      <rect x={0} width={width} height={16} fill={"rgba(0,0,0,0.8)"} rx={5} />
+      <rect x={0} width={width} height={20} fill={"rgba(0,0,0,0.5)"} rx={5} />
       <text
         x={width / 2}
-        y={10}
+        y={11}
         dy={1}
         fill="white"
         textAnchor="middle"
         fontSize={12}
+        fontWeight={600}
       >
         {text}
       </text>
@@ -41,4 +45,4 @@ function Label({ textForLabel = "something", width = 100 }) {
   );
 }
 
-export default React.memo(Label);
+export default Label;

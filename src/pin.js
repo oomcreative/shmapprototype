@@ -21,8 +21,8 @@ function Pin({ size = 35, value = 10 }) {
         r={size / 2 - 3}
         cx={0}
         cy={0}
-        stroke={"rgba(255,0,0,0.5)"}
-        strokeWidth={4}
+        // stroke={"rgba(255,0,0,0.5)"}
+        // strokeWidth={4}
         fill={"#000"}
       />
       <text x={0} y={0} dy={4} fill="white" textAnchor="middle">
@@ -32,4 +32,4 @@ function Pin({ size = 35, value = 10 }) {
   );
 }
 
-export default React.memo(Pin);
+export default Pin;

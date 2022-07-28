@@ -1,0 +1,280 @@
+[
+  {
+    "topic": "noise-db",
+    "data": [
+      {
+        "x": 1658671200000,
+        "laeq": 45.12
+      },
+      {
+        "x": 1658674800000,
+        "laeq": 45.12
+      },
+      {
+        "x": 1658678400000,
+        "laeq": 45.11
+      },
+      {
+        "x": 1658682000000,
+        "laeq": 45.11
+      },
+      {
+        "x": 1658685600000,
+        "laeq": 45.13
+      },
+      {
+        "x": 1658689200000,
+        "laeq": 45.13
+      },
+      {
+        "x": 1658692800000,
+        "laeq": 45.12
+      },
+      {
+        "x": 1658696400000,
+        "laeq": 45.13
+      },
+      {
+        "x": 1658700000000,
+        "laeq": 45.81
+      },
+      {
+        "x": 1658703600000,
+        "laeq": 46.18
+      },
+      {
+        "x": 1658707200000,
+        "laeq": 45.92
+      },
+      {
+        "x": 1658710800000,
+        "laeq": 45.69
+      },
+      {
+        "x": 1658714400000,
+        "laeq": 45.52
+      },
+      {
+        "x": 1658718000000,
+        "laeq": 45.84
+      },
+      {
+        "x": 1658721600000,
+        "laeq": 46.24
+      }
+    ],
+    "__typename": "SmallMultiple",
+    "device": {
+      "id": "b4l1G1oM",
+      "uuid": "2cf6b8e2-d4e3-4ec5-8cb1-724b023ccf7f",
+      "name": "Hexanode 3",
+      "lat": -33.883425,
+      "lng": 151.209282,
+      "type": "SITEHIVE",
+      "active": true,
+      "showVdv": false,
+      "expectedTransmissionPeriod": {
+        "input": 15,
+        "unit": "Minutes",
+        "__typename": "ExpectedTransmissionPeriod"
+      },
+      "telemetryInterval": {
+        "input": 15,
+        "unit": "Minutes",
+        "__typename": "TelemetryInterval"
+      },
+      "configuration": {},
+      "rules": [
+        {
+          "id": "896",
+          "name": "Site Hours Noise limit",
+          "sourceParameter": "laMax",
+          "exceedanceValue": 70,
+          "operation": "gte",
+          "status": "ACTIVE",
+          "timeRestrictions": [],
+          "transform": {
+            "aggregation": {
+              "type": "singleEvents"
+            }
+          },
+          "useSiteHours": "SITE_HOURS",
+          "__typename": "Rule"
+        },
+        {
+          "id": "897",
+          "name": "Out Of Hours Noise limit",
+          "sourceParameter": "laeq",
+          "exceedanceValue": 50,
+          "operation": "gte",
+          "status": "ACTIVE",
+          "timeRestrictions": [],
+          "transform": {
+            "aggregation": {
+              "type": "singleEvents"
+            }
+          },
+          "useSiteHours": "OUT_OF_HOURS",
+          "__typename": "Rule"
+        }
+      ],
+      "__typename": "Device",
+      "alerts": [
+        {
+          "alertId": 4033033,
+          "deviceUuid": "2cf6b8e2-d4e3-4ec5-8cb1-724b023ccf7f",
+          "deviceName": "Hexanode 3",
+          "topic": "noise-db",
+          "observedTimestamp": "1658712600000",
+          "sourceParameter": "laMax",
+          "ruleId": 896,
+          "observedValue": 75.06,
+          "deviceActive": true,
+          "classification": null,
+          "reportableStatus": null,
+          "eventNote": null,
+          "__typename": "Alert"
+        }
+      ]
+    }
+  },
+  {
+    "topic": "noise-db",
+    "data": [
+      {
+        "x": 1658671200000,
+        "laeq": 36.05
+      },
+      {
+        "x": 1658674800000,
+        "laeq": 36
+      },
+      {
+        "x": 1658678400000,
+        "laeq": 35.91
+      },
+      {
+        "x": 1658682000000,
+        "laeq": 35.8
+      },
+      {
+        "x": 1658685600000,
+        "laeq": 36.02
+      },
+      {
+        "x": 1658689200000,
+        "laeq": 36.11
+      },
+      {
+        "x": 1658692800000,
+        "laeq": 36.43
+      },
+      {
+        "x": 1658696400000,
+        "laeq": 37.03
+      },
+      {
+        "x": 1658700000000,
+        "laeq": 42.19
+      },
+      {
+        "x": 1658703600000,
+        "laeq": 44.73
+      },
+      {
+        "x": 1658707200000,
+        "laeq": 45.93
+      },
+      {
+        "x": 1658710800000,
+        "laeq": 43.84
+      },
+      {
+        "x": 1658714400000,
+        "laeq": 43.12
+      },
+      {
+        "x": 1658718000000,
+        "laeq": 43.96
+      },
+      {
+        "x": 1658721600000,
+        "laeq": 44.16
+      }
+    ],
+    "__typename": "SmallMultiple",
+    "device": {
+      "id": "bdpXG4lZ",
+      "uuid": "d488efa2-51b4-4bce-a743-c0ab0790999d",
+      "name": "Hexanode 97",
+      "lat": -33.883425,
+      "lng": 151.209282,
+      "type": "SITEHIVE",
+      "active": true,
+      "showVdv": false,
+      "expectedTransmissionPeriod": {
+        "input": 15,
+        "unit": "Minutes",
+        "__typename": "ExpectedTransmissionPeriod"
+      },
+      "telemetryInterval": {
+        "input": 15,
+        "unit": "Minutes",
+        "__typename": "TelemetryInterval"
+      },
+      "configuration": {},
+      "rules": [
+        {
+          "id": "896",
+          "name": "Site Hours Noise limit",
+          "sourceParameter": "laMax",
+          "exceedanceValue": 70,
+          "operation": "gte",
+          "status": "ACTIVE",
+          "timeRestrictions": [],
+          "transform": {
+            "aggregation": {
+              "type": "singleEvents"
+            }
+          },
+          "useSiteHours": "SITE_HOURS",
+          "__typename": "Rule"
+        },
+        {
+          "id": "897",
+          "name": "Out Of Hours Noise limit",
+          "sourceParameter": "laeq",
+          "exceedanceValue": 50,
+          "operation": "gte",
+          "status": "ACTIVE",
+          "timeRestrictions": [],
+          "transform": {
+            "aggregation": {
+              "type": "singleEvents"
+            }
+          },
+          "useSiteHours": "OUT_OF_HOURS",
+          "__typename": "Rule"
+        }
+      ],
+      "__typename": "Device",
+      "alerts": [
+        {
+          "alertId": 4033034,
+          "deviceUuid": "d488efa2-51b4-4bce-a743-c0ab0790999d",
+          "deviceName": "Hexanode 97",
+          "topic": "noise-db",
+          "observedTimestamp": "1658712600000",
+          "sourceParameter": "laMax",
+          "ruleId": 896,
+          "observedValue": 101.09,
+          "deviceActive": true,
+          "classification": "Test",
+          "reportableStatus": "REPORTABLE",
+          "eventNote": "Test Clapping",
+          "__typename": "Alert"
+        }
+      ]
+    }
+  }
+]
